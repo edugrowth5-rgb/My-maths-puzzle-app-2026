@@ -3,13 +3,14 @@
 const CACHE_NAME = 'maths-magic-v1';
 // Un sabhi files ki list jo offline chalne ke liye chahiye
 const ASSETS_TO_CACHE = [
-    'Mindex.html',
+    'index.html',
     'Mstyle.css',
     'Mapp.js',
     'Mmanifest.json',
     'icon-192.png',
     'icon-512.png',
-    'https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap'
+    'https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap',
+    'Gemini_Generated_Image_wud787wud787wud7 (1).png'
 ];
 
 // 1. Install Event: Files ko cache mein save karna
