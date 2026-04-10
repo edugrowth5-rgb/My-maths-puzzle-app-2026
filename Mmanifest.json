@@ -4,19 +4,19 @@
   "description": "A fun and interactive maths puzzle game for kids to learn addition and subtraction.",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "Gemini_Generated_Image_wud787wud787wud7 (1).png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "icon-512.png",
+      "src": "Gemini_Generated_Image_wud787wud787wud7 (1).png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "Mindex.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#FFDE59",
   "theme_color": "#8C52FF",
