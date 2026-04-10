@@ -1,0 +1,26 @@
+{
+  "short_name": "MathsMagic",
+  "name": "Maths Magic Puzzle: Kids Edition",
+  "description": "A fun and interactive maths puzzle game for kids to learn addition and subtraction.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "Mindex.html",
+  "display": "standalone",
+  "background_color": "#FFDE59",
+  "theme_color": "#8C52FF",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en-IN"
+}
