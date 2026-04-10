@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Magic Puzzle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Mstyle.css">
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="theme-color" content="#8C52FF">
+    <link rel="manifest" href="Mmanifest.json">
+</head>
+<body>
+    <div id="app">
+        <div class="theme-selector" id="theme-selector"></div>
+
+        <div class="level-container">🏆 Step: <span id="level-val">1</span></div>
+        
+        <h1>Maths Magic! 🎨</h1>
+        
+        <div class="stats">
+            <span id="score">⭐ 0</span>
+            <span id="timer">⏰ 30s</span>
+        </div>
+        
+        <div class="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+        
+        <div class="puzzle-container">
+            <div id="equation">
+                <span id="num1">?</span>
+                <span id="operator">+</span>
+                <span id="num2">?</span>
+                <span>=</span>
+                <span id="result">?</span>
+            </div>
+            <div id="options" class="options-grid"></div>
+        </div>
+        
+        <button id="start-btn">Let's Play! 🚀</button>
+        
+        <button id="install-btn" style="display: none; background: #3498db; color: white; padding: 10px; width: 100%; border-radius: 20px; border: 3px solid #333; margin-top: 10px; font-weight: 600;">
+    Install Maths Magic 📲
+</button>
+
+        <div class="brand-footer">
+            Developed by <span>SAGAR</span>
+        </div>
+    </div>
+
+    <script src="Mapp.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('Msw.js')
+            .then(() => console.log("Maths Magic PWA Ready!"));
+        }
+    </script>
+    <script>
+    // Check karte hain ki browser PWA support karta hai ya nahi
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('Msw.js')
+                .then((registration) => {
+                    // Registration safal raha
+                    console.log('Maths Magic PWA Registered! Scope:', registration.scope);
+                })
+                .catch((error) => {
+                    // Registration mein error aaya
+                    console.log('Service Worker registration failed:', error);
+                });
+        });
+    }
+</script>
+</body>
+</html>
